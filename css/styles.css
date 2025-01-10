@@ -1,0 +1,183 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v22-latin-regular.eot');
+  src: url('../fonts/poppins-v22-latin-regular.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/poppins-v22-latin-regular.woff2') format('woff2'), 
+       url('../fonts/poppins-v22-latin-regular.woff') format('woff'), 
+       url('../fonts/poppins-v22-latin-regular.ttf') format('truetype'), 
+       url('../fonts/poppins-v22-latin-regular.svg#Poppins') format('svg'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/poppins-v22-latin-500.eot');
+  src: url('../fonts/poppins-v22-latin-500.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/poppins-v22-latin-500.woff2') format('woff2'), 
+       url('../fonts/poppins-v22-latin-500.woff') format('woff'), 
+       url('../fonts/poppins-v22-latin-500.ttf') format('truetype'), 
+       url('../fonts/poppins-v22-latin-500.svg#Poppins') format('svg'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/poppins-v22-latin-600.eot');
+  src: url('../fonts/poppins-v22-latin-600.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/poppins-v22-latin-600.woff2') format('woff2'), 
+       url('../fonts/poppins-v22-latin-600.woff') format('woff'), 
+       url('../fonts/poppins-v22-latin-600.ttf') format('truetype'), 
+       url('../fonts/poppins-v22-latin-600.svg#Poppins') format('svg'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/poppins-v22-latin-700.eot');
+  src: url('../fonts/poppins-v22-latin-700.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/poppins-v22-latin-700.woff2') format('woff2'), 
+       url('../fonts/poppins-v22-latin-700.woff') format('woff'), 
+       url('../fonts/poppins-v22-latin-700.ttf') format('truetype'), 
+       url('../fonts/poppins-v22-latin-700.svg#Poppins') format('svg'); 
+}
+
+
+:root {
+    --color-brand: #02897A;
+    --color-brand-light: #bcd0e5;
+    --color-icon-blue: #4D8DFF;
+    --color-icon-violet: #740A76;
+    --color-icon-red: #F03E3D;
+    --color-primeri-dark: #22343D;
+    --color-primeri-white: #FFFFFF;
+    --color-secondary-dark: #1F2E35;
+    --color-secondary-normal: #30444E;
+    --color-secondary-light: #475E69;
+    --color-logo: #173A56;
+}
+
+/* base */
+body {
+  color: var(--color-primeri-dark);
+  background-color: var(--color-primeri-white);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.62;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+ul, ol {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+ul {
+    list-style-type: none; /*убирає маркування списку*/
+}
+
+img {
+	display: block;
+}
+
+.container {
+    width: 100%;
+    max-width: 1110px;
+    margin: auto;
+}
+
+/* Header */
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 19px 0;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+
+.header .link-logo {
+    color:var(--color-logo);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 0.93; 
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-right: 237px;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.link {
+    display: block;
+    color: var(--color-primeri-dark);
+    text-decoration: none;
+    line-height: 1.75;
+    /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); Плавна анімація */
+}
+
+.link.current {
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+.btn-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 21px;
+}
+
+.button-in,
+.button-up {
+  height: 42px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  padding: 9px 24px;
+}
+
+.btn-menu .button-in {
+  width: 105px;
+  border: 1px solid var(--color-brand-light);
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.btn-menu .button-up {
+  width: 113px;
+  border-radius: 4px;
+  background-color: var(--color-brand);
+  color: var(--color-primeri-white);
+  border: none;
+
+}
