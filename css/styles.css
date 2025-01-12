@@ -104,8 +104,6 @@ button {
 }
 
 .section {
-  /* max-width: 1400px; */
-  width: 100%;
   margin: 0 auto;
   padding: 50px 0;
 }
@@ -125,7 +123,6 @@ button {
 .header .container {
   display: flex;
   justify-content: space-between;
-  padding: 19px 0;
 }
 
 .header-nav {
@@ -157,6 +154,7 @@ button {
     color: var(--color-primeri-dark);
     text-decoration: none;
     line-height: 1.75;
+    padding: 26px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -182,7 +180,7 @@ button {
   font-weight: 600;
   font-size: 16px;
   text-align: center;
-  padding: 9px 24px;
+  padding: 9px 0;
 }
 
 .btn-menu .button-in {
@@ -225,14 +223,7 @@ button {
 .hero-section .container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 35px;
-}
-
-.hero-container {
-  width: 100%;
-  max-width: 465px;
-  padding: 112px 0;
+  justify-content: space-between;
 }
 
 .hero-title {
@@ -309,7 +300,7 @@ button {
   font-weight: 700;
   font-size: 32px;
   text-align: center;
-  margin: 0 auto 50px;
+  margin-bottom: 50px;
 }
 
 .product-list {
@@ -369,36 +360,19 @@ button {
 
 .product-btn {
   width: 175px;
-  height: 53px;
-  padding: 15px 0;
-  font-weight: 700;
-  font-size: 16px;
-  border-radius: 4px;
-  border: none;
-  color: var(--color-primeri-white);
-  background-color: var(--color-brand);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+ }
 
-.product-btn:hover {
-  color: var(--color-primeri-dark);
-  background-color: transparent;
-  border: 1px solid var(--color-brand-light);
-}
 
 /* Managment section */
 
 .managment-section .container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 84px;
+  justify-content: space-between;
 }
 
 .managment-container {
   max-width: 486px;
-  padding: 41px 0;
 }
 
 .title {
@@ -439,12 +413,11 @@ margin-bottom: 12px;
 .support-section .container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 84px;
+  justify-content: space-between;
 }
 
 .support-container {
-  padding: 41px 0;
+  max-width: 450px;
 }
 
 .support-list {
@@ -489,18 +462,131 @@ margin-bottom: 12px;
 
 /* Collaborative section */
 
+.collaborative-section {
+  padding-bottom: 75px;
+}
+
 .collaborative-section .container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 84px; 
+  justify-content: space-between;
 }
 
 .collaborative-container {
-  min-width: 486px;
-  padding: 41px 0;
+  max-width: 486px;
 }
 
 /* Process section */
 
+.process-section {
+  padding: 75px 0;
+}
 
+.process-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  max-width: 916px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.section-text {
+  max-width: 542px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 40px;
+
+}
+
+.process-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 25px;
+  margin-bottom: 50px;
+}
+
+.process-card {
+  display: flex;
+  align-items: center;
+  width: calc(50% - 60px);
+  gap: 20px;
+ 
+}
+
+.wrap-card-text {
+  display: flex;
+  align-items: center;
+  padding: 14px 20px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  box-shadow: 2px 2px 10px 0 rgba(23, 58, 86, 0.15);
+}
+
+.process-card.reverse {
+  flex-direction: row-reverse; /* Міняємо порядок: текст перед картинкою */
+}
+
+.process-text {
+   font-weight: 500;
+   text-align: center;
+}
+
+.process-btn {
+  width: 216px;
+}
+
+/* Strategies section */
+
+.strategies-title {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.strategies-text {
+  font-weight: 500;
+  margin-bottom: 40px;
+  width: 465px;
+}
+
+.strategies-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.strategies-card {
+  width: calc((100% - 60px) / 3);
+}
+
+.strategies-image {
+  margin-bottom: 24px;
+}
+
+.strategies-card-text {
+  padding: 0 90px 0 24px;
+  line-height: 1.75;
+}
+
+.text-decor {
+  font-weight: 700;
+}
+
+.strategies-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.67;
+  padding: 0 27px;
+  /* margin-bottom: 40px; */
+}
