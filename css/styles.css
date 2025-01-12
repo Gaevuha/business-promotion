@@ -84,21 +84,23 @@ h4,
 h5,
 h6,
 p {
-  margin-top: 0;
+  margin: 0;
 }
 
 ul, ol {
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 0;
+  list-style-type: none;
 }
 
-ul {
-    list-style-type: none; /*убирає маркування списку*/
-}
 
 img {
 	display: block;
+}
+
+button {
+  cursor: pointer;
 }
 
 .section {
@@ -109,9 +111,9 @@ img {
 }
 
 .container {
-    width: 100%;
-    max-width: 1110px;
-    margin: auto;
+    max-width: 1150px;
+    padding: 0 20px;
+    margin: 0 auto;
 }
 
 /* Header */
@@ -181,7 +183,6 @@ img {
   font-size: 16px;
   text-align: center;
   padding: 9px 24px;
-  cursor: pointer;
 }
 
 .btn-menu .button-in {
@@ -261,7 +262,6 @@ img {
   padding: 15px 0;
   font-weight: 700;
   font-size: 16px;
-  cursor: pointer;
   border-radius: 4px;
   border: none;
   color: var(--color-primeri-white);
@@ -284,7 +284,6 @@ img {
   align-items: center;
   padding: 2px 0;
   border: none;
-  cursor: pointer;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: var(--color-brand);
@@ -299,9 +298,6 @@ img {
 
 /* Product section */
 
-/* .product-section {
-  padding-bottom: 50px;
-} */
 .product-section .container {
   display: flex;
   flex-direction: column;
@@ -377,7 +373,6 @@ img {
   padding: 15px 0;
   font-weight: 700;
   font-size: 16px;
-  cursor: pointer;
   border-radius: 4px;
   border: none;
   color: var(--color-primeri-white);
@@ -402,34 +397,37 @@ img {
 }
 
 .managment-container {
-  width: 486px;
+  max-width: 486px;
   padding: 41px 0;
 }
 
-.managment-title {
-  width: 224px;
+.title {
+  width: 305px;
   margin-bottom: 25px;
   font-weight: 600;
   font-size: 16px;
 }
 
-.managment-title-decor {
+.title-decor {
   font-weight: 700;
   font-size: 32px;
 }
-.managment-text {
+.text {
   margin-bottom: 30px;
 }
 
-.managment-card-title {
+.card-title {
 font-weight: 600;
 font-size: 16px;
 line-height: 1.62;
 margin-bottom: 12px;
 }
 
-.managment-card-text {
+.card-text {
   margin-bottom: 25px;
+}
+.card-text.last{
+  margin-bottom: 0;
 }
 
 .managment-card-text.text-card {
@@ -447,22 +445,6 @@ margin-bottom: 12px;
 
 .support-container {
   padding: 41px 0;
-}
-
-.support-title {
-  font-weight: 600;
-  font-size: 16px;
-  width: 310px;
-  margin-bottom: 25px;
-}
-
-.support-title-decor {
-  font-weight: 700;
-  font-size: 32px;
-}
-
-.support-text {
-  margin-bottom: 30px;
 }
 
 .support-list {
@@ -491,8 +473,6 @@ margin-bottom: 12px;
   padding: 8px 0;
 }
 
-
-
 .support-path.one {
   background-color: var(--color-icon-yellow);
 }
@@ -506,6 +486,21 @@ margin-bottom: 12px;
 .icon-path {
   fill: var(--color-primeri-white);
 }
-.support-card-text {
-  margin: 0;
+
+/* Collaborative section */
+
+.collaborative-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 84px; 
 }
+
+.collaborative-container {
+  min-width: 486px;
+  padding: 41px 0;
+}
+
+/* Process section */
+
+
