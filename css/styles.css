@@ -57,6 +57,8 @@
     --color-icon-blue: #4D8DFF;
     --color-icon-violet: #740A76;
     --color-icon-red: #F03E3D;
+    --color-primeri-light:#737373;
+    --color-primeri-normal: #252b42;
     --color-primeri-dark: #22343D;
     --color-primeri-white: #FFFFFF;
     --color-secondary-dark: #1F2E35;
@@ -660,6 +662,7 @@ margin-bottom: 12px;
   font-size: 76px;
   line-height: 1.32;
   color: var(--color-brand);
+  margin-right: 10px;
 }
 .wrap-price {
   display: flex;
@@ -706,7 +709,8 @@ margin-bottom: 12px;
 .price-card-title.accent,
 .price-card-text.accent,
 .numeric-text.accent,
-.offers-text.accent {
+.offers-text.accent,
+.symbol.accent {
   color: var(--color-primeri-white);
 }
 
@@ -736,4 +740,62 @@ margin-bottom: 12px;
    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
 }
 
+/* Clients section  */
+
+.clients-section .section-title {
+    margin-bottom: 10px;
+}
+ .clients-section .section-text {
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+  margin: 0 auto 40px; 
+ }
+
+ .clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 64px;
+}
+.clients-card {
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  padding: 28px 26px;
+  width: calc((100% - 128px) / 3);
+}
+
+.wrap-clients {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  
+}
+
+.wrap-card-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+.text-card-clients {
+line-height: 1.75;
+letter-spacing: 0.01em;
+color: var(--color-primeri-light);
+margin-bottom: 16px;
+}
+
+.clients-card-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: var(--color-brand);
+}
+.clients-card-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.01em;
+  color: var(--color-primeri-normal);
+}
 
