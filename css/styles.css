@@ -68,6 +68,7 @@
     --color-icon-yellow:  #f90;
     --color-per-normal: #afafaf;
     --color-per-light: #e0e0e0;
+    --color-icon-cociale:  #edfffc;
 }
 
 /* base */
@@ -122,6 +123,20 @@ button {
     max-width: 1150px;
     padding: 0 20px;
     margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Header */
@@ -194,7 +209,7 @@ button {
 }
 
 .btn-menu .button-in {
-  width: 105px;
+  min-width: 105px;
   border: 1px solid var(--color-brand-light);
   border-radius: 4px;
   background-color: transparent;
@@ -204,7 +219,7 @@ button {
 
 
 .btn-menu .button-up {
-  width: 113px;
+  min-width: 113px;
   border-radius: 4px;
   background-color: var(--color-brand);
   color: var(--color-primeri-white);
@@ -260,7 +275,7 @@ button {
 }
 
 .hero-btn {
-  width: 178px;
+  min-width: 178px;
   /* height: 53px; */
   padding: 15px 0;
   font-weight: 700;
@@ -277,7 +292,8 @@ button {
 .hero-btn:focus {
   color: var(--color-primeri-dark);
   background-color: transparent;
-  border: 1px solid var(--color-brand-light);
+  border: none;
+  box-shadow: 2px 2px 10px 0 rgba(23, 58, 86, 0.15);
 }
 
 
@@ -372,7 +388,7 @@ button {
 }
 
 .product-btn {
-  width: 175px;
+  min-width: 175px;
  }
 
 
@@ -404,10 +420,10 @@ button {
 }
 
 .card-title {
-font-weight: 600;
-font-size: 16px;
-line-height: 1.62;
-margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.62;
+  margin-bottom: 12px;
 }
 
 .card-text {
@@ -554,7 +570,7 @@ margin-bottom: 12px;
 }
 
 .process-btn {
-  width: 216px;
+  min-width: 216px;
 }
 
 /* Strategies section */
@@ -605,7 +621,6 @@ margin-bottom: 12px;
   font-size: 24px;
   line-height: 1.67;
   padding: 0 27px;
-  /* margin-bottom: 40px; */
 }
 
 .strategies-card-title.accent {
@@ -702,7 +717,7 @@ margin-bottom: 12px;
   font-weight: 600;
   font-size: 18px;
   border-radius: 8px;
-  width: 139px;
+  min-width: 139px;
   padding: 12px 0;
 }
  .price-btn:hover {
@@ -728,7 +743,7 @@ margin-bottom: 12px;
   text-align: center;
   color: var(--color-brand);
   padding: 12px 0;
-  width: 139px;
+  min-width: 139px;
   border: none;
   border-radius: 8px;
   background-color: var(--color-primeri-white);
@@ -801,5 +816,222 @@ margin-bottom: 16px;
   line-height: 1.71;
   letter-spacing: 0.01em;
   color: var(--color-primeri-normal);
+}
+
+/* Promo section */
+
+.promo-section .container {
+  max-width: 968px;
+  padding: 0 46px 0 51px;
+  border-radius: 32px;
+  background-color: var(--color-brand);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.promo-text {
+  max-width: 510px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.51;
+  color: var(--color-primeri-white);
+  margin-bottom: 46px;
+}
+
+.promo-btn.price-btn.accent {
+  min-width: 150px;
+  padding: 15px 0;
+}
+
+/* Footer */
+
+.footer-section .link-logo {
+    color:var(--color-logo);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 0.93; 
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0;
+    margin-bottom: 18px;
+}
+
+.footer-wrap-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+
+.sociale {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.item-icons {
+  width: 40px;
+  height: 40px; 
+}
+
+.icon-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-icon-cociale);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sociale-icons {
+  fill: var(--color-icon-cociale);
+  stroke: var(--color-brand);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-link:hover,
+.icon-link:focus {
+    background-color: var(--color-brand);
+}
+
+.icon-link:hover .sociale-icons,
+.icon-link:focus .sociale-icons {
+  fill: var(--color-brand);
+  stroke: var(--color-icon-cociale);
+}
+
+.wrap-logo-sociale {
+  margin-right: 148px;
+}
+
+.wrap-title-list {
+  flex-shrink: 0;
+  margin-right: 140px;
+}
+
+.wrap-title-list.footer {
+  flex-shrink: 0;
+  margin-right: 95px;
+}
+
+.footer-link {
+  color: var(--color-primeri-dark);
+  text-decoration: none;
+  line-height: 2.19;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-link:hover {
+  color: var(--color-brand);
+}
+
+.footer-title {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+
+}
+.footer-title.form {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.footer-text {
+ line-height: 1.87;
+ text-align: center;
+}
+
+.form-icons {
+  fill: var(--color-brand);
+}
+
+/* Загальний стиль форми */
+.order-form {
+  max-width: 325px;
+  margin-bottom: 25px;
+  
+}
+
+.for-input-icon {
+  position: relative;
+}
+
+.form-field {
+  max-width: 325px;
+  padding: 10px 0 10px 42px;
+  border: 1px solid var(--color-brand-light);
+  border-radius: 4px;
+  line-height: 1.75;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Іконка всередині інпуту */
+.form-icon {
+  position: absolute;
+  left: 12px; /* Відступ іконки від краю інпуту */
+  top: 50%; /* Розташування по центру вертикально */
+  transform: translateY(-50%); /* Центрування іконки */
+  fill: var(--color-brand); /* Колір іконки */
+  pointer-events: none; /* Щоб іконка не перекривала поле вводу */
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* При фокусі на інпуті */
+.form-field:focus {
+  /* border-color: var(--color-primeri-light); */
+  border: 0.5px solid var(--color-primeri-light);
+ }
+
+ .for-input-icon:focus-within .form-icon {
+  fill: var(--color-primeri-light); /* Змінений колір іконки */
+}
+
+.form-field::placeholder {
+  color: var(--color-brand); /* Колір тексту підказки */
+}
+/* Зміна кольору плейсхолдера при фокусі */
+.form-field:focus::placeholder {
+  color: var(--color-primeri-light)
+}
+
+.footer-btn {
+  min-width: 131px;
+  padding: 10px 0;
+}
+
+/* Page customers */
+
+/* Our client */
+
+.client-section {
+  padding: 100px 0 60px 0;
+}
+
+.client-section .container {
+     max-width: 850px;
+     padding: 0;
+}
+
+.client-title {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.client-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+  padding: 19px 0;
 }
 
