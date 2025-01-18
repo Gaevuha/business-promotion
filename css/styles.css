@@ -57,6 +57,7 @@
     --color-icon-blue: #4D8DFF;
     --color-icon-violet: #740A76;
     --color-icon-red: #F03E3D;
+    --color-primeri-dg-light:#f5f5f5;
     --color-primeri-light:#737373;
     --color-primeri-normal: #252b42;
     --color-primeri-dark: #22343D;
@@ -1017,8 +1018,8 @@ margin-bottom: 16px;
 }
 
 .client-section .container {
-     max-width: 850px;
-     padding: 0;
+  max-width: 850px;
+  padding: 0;
 }
 
 .client-title {
@@ -1035,3 +1036,101 @@ margin-bottom: 16px;
   padding: 19px 0;
 }
 
+ /* Choose product */
+
+
+.choose-section {
+  padding-top: 60px;
+  background-color: var(--color-primeri-dg-light);
+}
+.section-title {
+   margin-bottom: 50px;
+}
+.choose-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.choose-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #dedede;
+  border-radius: 10px;
+  padding: 32px 28px;
+  width: calc((100% - 60px) / 3);
+  
+
+}
+.choose-item .snake-container.snake,
+.choose-item .arrow-container.arrow,
+.choose-item .time-container.time {
+  margin-bottom: 32px;
+}
+.choose-icon {
+}
+.choose-card-title {
+  font-size: 24px;
+  line-height: 1.37;
+  margin-bottom: 16px;
+}
+.choose-card-text {
+  line-height: 1.69;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+/* How Product Work */
+
+.product-work {
+  padding-bottom: 58px;
+}
+
+.product-work .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1027px;
+  padding: 0;
+}
+
+.product-work .section-title {
+  margin-bottom: 73px;
+}
+
+.product-work-list {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-bottom: 87px;
+
+}
+.product-work-card {
+  display: flex;
+  align-items: center;
+  gap: 88px;
+}
+
+.product-work-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.step {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.card-title {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.card-text {
+  line-height: 1.75;
+  margin: 0;
+}
+
+
+
+ 

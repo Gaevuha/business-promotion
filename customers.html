@@ -71,123 +71,98 @@
         </div>
       </section>
       <!-- Choose Product? -->
-      <section>
-        <h2>Why Choose Product?</h2>
-        <ul>
-          <li>
-            <div
-              style="
-                background-color: #02897a;
-                width: 50px;
-                height: 50px;
-                border-radius: 19px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <img
-                src="./images/icon1.svg"
-                alt="icon1"
-                width="16"
-                height="18"
-              />
-            </div>
-            <h3>Special Business</h3>
-            <p>
-              Product helps you see how many more days you need to work to reach
-              your financial goal for the month and year.
-            </p>
-          </li>
-          <li>
-            <div
-              style="
-                background-color: #4d8dff;
-                width: 50px;
-                height: 50px;
-                border-radius: 19px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <img src="./images/icon2.svg" alt="icon2" />
-            </div>
-            <h3>Instant Result</h3>
-            <p>
-              Product helps you see how many more days you need to work to reach
-              your financial goal for the month and year.
-            </p>
-          </li>
-          <li>
-            <div
-              style="
-                background-color: #f03e3d;
-                width: 50px;
-                height: 50px;
-                border-radius: 19px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <img src="./images/icon3.svg" alt="icon3" />
-            </div>
-            <h3>Fastest way to organize</h3>
-            <p>
-              Product helps you see how many more days you need to work to reach
-              your financial goal for the month and year.
-            </p>
-          </li>
-        </ul>
+      <section class="section choose-section">
+        <div class="container">
+          <h2 class="section-title">Why Choose Product?</h2>
+          <ul class="choose-list">
+            <li class="choose-item">
+              <div class="arrow-container arrow">
+                <svg class="choose-icon" width="16" height="18">
+                  <use href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </div>
+              <h3 class="choose-card-title">Special Business</h3>
+              <p class="choose-card-text">
+                Product helps you see how many more days you need to work<br />
+                to reach your financial goal<br />
+                for the month and year.
+              </p>
+            </li>
+            <li class="choose-item">
+              <div class="snake-container snake">
+                <svg class="choose-icon" width="16" height="18">
+                  <use href="./images/icons.svg#icon-snake"></use>
+                </svg>
+              </div>
+              <h3 class="choose-card-title">Instant Result</h3>
+              <p class="choose-card-text">
+                Product helps you see how many more days you need to work<br />
+                to reach your financial goal<br />
+                for the month and year.
+              </p>
+            </li>
+            <li class="choose-item">
+              <div class="time-container time">
+                <svg class="choose-icon" width="16" height="18">
+                  <use href="./images/icons.svg#icon-heart"></use>
+                </svg>
+              </div>
+              <h3 class="choose-card-title">Fastest way to organize</h3>
+              <p class="choose-card-text">
+                Product helps you see how many more days you need to work<br />
+                to reach your financial goal<br />
+                for the month and year.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- How Product -->
-      <section>
-        <h2>How Product Work?</h2>
-        <ol>
-          <li>
-            <img
-              src="./images/mac1.jpg"
-              alt="mac"
-              width="500"
-              height="280"
-            /><span>STEP 1</span>
-            <h3>Apply for a product</h3>
-            <p>
-              Completing our easy step-by-step application form gives you access
-              to multiple business with multiple products. We analyse your
-              business through our proprietary credit analysis technology
-            </p>
-          </li>
-          <li>
-            <img
-              src="./images/mac2.jpg"
-              alt="mac"
-              width="500"
-              height="280"
-            /><span>STEP 2</span>
-            <h3>Pay fully refundable</h3>
-            <p>
-              Product will contactting you instantly to receive payment of the
-              Application Fee. if no offer of product is available, your fee
-              will be fully refunded.
-            </p>
-          </li>
-          <li>
-            <img
-              src="./images/mac3.jpg"
-              alt="mac"
-              width="500"
-              height="280"
-            /><span>STEP 3</span>
-            <h3>Completion</h3>
-            <p>
-              Product will continue to liase between borrower and manager to
-              procees and complete a quick and efficient settlement
-            </p>
-          </li>
-        </ol>
-        <button type="button">Get in touch with us</button>
+      <section class="section product-work">
+        <div class="container">
+          <h2 class="section-title">How Product Work?</h2>
+          <ul class="product-work-list">
+            <li class="product-work-card">
+              <img src="./images/mac1.jpg" alt="mac" width="500" />
+              <div class="wrap-product-card">
+                <span class="step">STEP 1</span>
+                <h3 class="card-title">Apply for a product</h3>
+                <p class="card-text">
+                  Completing our easy step-by-step application form gives you
+                  access to multiple business with multiple products. We analyse
+                  your business through our proprietary credit analysis
+                  technology
+                </p>
+              </div>
+            </li>
+            <li class="product-work-card reverse">
+              <img src="./images/mac2.jpg" alt="mac" width="500" />
+              <div class="wrap-product-card">
+                <span class="step">STEP 2</span>
+                <h3 class="card-title">Pay fully refundable</h3>
+                <p class="card-text">
+                  Product will contactting you instantly to receive payment of
+                  the Application Fee. if no offer of product is available, your
+                  fee will be fully refunded.
+                </p>
+              </div>
+            </li>
+            <li class="product-work-card">
+              <img src="./images/mac3.jpg" alt="mac" width="500" />
+              <div class="wrap-product-card">
+                <span class="step">STEP 3</span>
+                <h3 class="card-title">Completion</h3>
+                <p class="card-text">
+                  Product will continue to liase between borrower and manager to
+                  procees and complete a quick and efficient settlement
+                </p>
+              </div>
+            </li>
+          </ul>
+          <button class="product-work-btn hero-btn" type="button">
+            Get in touch with us
+          </button>
+        </div>
       </section>
       <!-- Offers -->
       <section>
