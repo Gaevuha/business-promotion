@@ -1260,6 +1260,11 @@ margin-bottom: 16px;
   padding: 0;
 }
 
+.offer-link.link:hover,
+.offer-link.link:focus {
+  color: var(--color-brand);
+}
+
 /* Promo */
 .promo-section.customers {
   padding: 75px 0;
