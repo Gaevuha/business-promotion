@@ -637,8 +637,8 @@ button {
 .price-section .container {
   display: flex;
   flex-direction: column;
- 
 }
+
 .price-title {
   line-height: 1.67;
   margin: 0 auto 10px;
@@ -1273,4 +1273,28 @@ margin-bottom: 16px;
   padding-top: 75px;
 }
 
- 
+/* Page Price */
+
+/* Price */
+
+.section-price .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-price-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.section-price .price-title {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 16px;
+
+}
+.section-price .price-text {
+  margin-bottom: 49px;
+
+}
