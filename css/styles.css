@@ -105,7 +105,7 @@ ul, ol {
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 0;
-  list-style-type: none;
+    list-style-type: none;
 }
 
 
@@ -1159,25 +1159,25 @@ margin-bottom: 16px;
 }
 .wrap-background-lightning {
   position: relative;
-  top:28px;
-  left: 48px;
+  top:32px;
+  left: 47px;
   width: 50px;
   height: 50px;
   border-radius: 8px;
   background-color: var(--color-icon-red);
   transform-origin: bottom right; 
-  transform: rotate(-30deg);
+  transform: rotate(-15deg);
 }
 .wrap-bg-icon-lightning {
   position: absolute;
-  top: 11px;
+  top: 13px;
   left: 6px;
   width: 50px;
   height: 50px;
   border: 2px solid #FF759F;
   border-radius: 8px;
   background-color: var(--color-icon-red);
-  transform: rotate(30deg);
+  transform: rotate(15deg);
   /* z-index: 5; */
 }
 
@@ -1230,26 +1230,26 @@ margin-bottom: 16px;
 
 .wrap-background-union {
   position: relative;
-  top:28px;
-  left: 48px;
+  top:32px;
+  left: 47px;
   width: 50px;
   height: 50px;
   border-radius: 8px;
   background-color: var(--color-icon-blue);
   transform-origin: bottom right; 
-  transform: rotate(-30deg);
+  transform: rotate(-15deg);
 }
 
 .wrap-bg-icon-union {
   position: absolute;
-  top: 11px;
+  top: 13px;
   left: 6px;
   width: 50px;
   height: 50px;
   border: 2px solid #00c3ff;
   border-radius: 8px;
   background-color: var(--color-icon-blue);
-  transform: rotate(30deg);
+  transform: rotate(15deg);
 }
 
 .client-logo-union {
