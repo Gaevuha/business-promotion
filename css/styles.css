@@ -839,9 +839,8 @@ button {
 
 /* Process section */
 
-
 .process-section {
-  padding: 75px 0 50px 0;
+  padding: 40px 0 50px 0;
 }
 
 .process-section .container {
@@ -885,8 +884,6 @@ button {
   margin-bottom: 32px;
 }
 
-
-
 .process-card:nth-child(1) {
   order: 1; /* avatar1 */
 }
@@ -903,7 +900,6 @@ button {
   order: 4; /* avatar2 */
 }
 
-
 .wrap-card-text {
   width: 237px; /*281px;*/
   height: 50px;
@@ -913,7 +909,6 @@ button {
   flex-shrink: 0;
   border-radius: 25px;
   box-shadow: 0 2px 8px 0 rgba(86, 117, 146, 0.1);
-
 }
 
 .process-text {
@@ -927,14 +922,17 @@ button {
 }
 
 @media screen and (min-width: 1150px) {
-  .process-list {
-  display: flex;
-  flex-direction: row;
- 
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px 100px;
-  margin-bottom: 50px;
+
+.process-section {
+    padding-top: 75px;
+}
+.process-list {
+    display: flex;
+    flex-direction: row;  
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px 100px;
+    margin-bottom: 50px;
 }
 
 .process-card {
@@ -984,3 +982,107 @@ button {
 }
 
 }
+
+/* Strategies section */
+
+.strategies-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+
+.strategies-title {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.strategies-text {
+  font-weight: 500;
+  margin-bottom: 40px;
+  width: 349px;
+}
+
+.strategies-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.strategies-image {
+  margin-bottom: 24px;
+}
+
+
+.strategies-card-text {
+  /* padding: 0 90px 0 24px; */
+  line-height: 1.75;
+  margin-bottom: 12px;
+  
+}
+
+.text-decor {
+  font-weight: 700;
+}
+.strategies-card {
+  padding-bottom: 40px;/*?*/
+}
+
+.strategies-card-title {
+  max-width: 294px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.67;
+  /* padding: 0 27px; */
+}
+
+.strategies-card-title.accent {
+  color: var(--color-brand);
+}
+
+@media screen and (min-width: 1150px) {
+.strategies-section .container {
+  align-items: flex-start; 
+}
+
+.strategies-section {
+   padding-bottom: 85px;
+}
+
+
+.strategies-title {
+  margin-bottom: 10px;
+}
+
+.strategies-text {
+  width: 465px;
+  
+}
+
+.strategies-list {
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+
+}
+
+
+.strategies-card-text {
+  padding: 0 90px 0 24px;  
+}
+
+.strategies-card {
+  width: calc((100% - 60px) / 3);
+  padding-bottom: 40px;/*?*/
+}
+
+.strategies-card-title {
+  min-width: 340px;
+  padding: 0 27px;
+}
+}
+

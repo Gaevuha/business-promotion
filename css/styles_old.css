@@ -2,63 +2,6 @@
 
 
 
-
-
-
-/* Strategies section */
-
-.strategies-section {
-  padding-bottom: 85px;
-}
-
-.strategies-title {
-  font-weight: 700;
-  font-size: 34px;
-  margin-bottom: 10px;
-}
-
-.strategies-text {
-  font-weight: 500;
-  margin-bottom: 40px;
-  width: 465px;
-}
-
-.strategies-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-  margin-bottom: 40px;
-}
-
-.strategies-card {
-  width: calc((100% - 60px) / 3);
-}
-
-.strategies-image {
-  margin-bottom: 24px;
-}
-
-.strategies-card-text {
-  padding: 0 90px 0 24px;
-  line-height: 1.75;
-}
-
-.text-decor {
-  font-weight: 700;
-}
-
-.strategies-card-title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.67;
-  padding: 0 27px;
-}
-
-.strategies-card-title.accent {
-  color: var(--color-brand);
-}
-
 /* Price section */
 
 .price-section {
