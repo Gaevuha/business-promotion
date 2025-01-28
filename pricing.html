@@ -9,6 +9,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Business promotion</title>
+    <script src="./js/menu.js" defer></script>
     <script src="./js/question.js" defer></script>
   </head>
   <body>
@@ -32,6 +33,36 @@
           <li><button class="button-in" type="button">Sign In</button></li>
           <li><button class="button-up" type="button">Sign Up</button></li>
         </ul>
+
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-hero-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>
+            <svg class="mobile-icons-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list">
+              <li><a class="mobile-link" href="./index.html">Product</a></li>
+              <li>
+                <a class="mobile-link" href="./customers.html">Customers</a>
+              </li>
+              <li><a class="mobile-link" href="./pricing.html">Pricing</a></li>
+              <li><a class="mobile-link" href="">Resources</a></li>
+            </ul>
+          </nav>
+          <ul class="mobile-btn-menu">
+            <li><button class="button-in" type="button">Sign In</button></li>
+            <li><button class="button-up" type="button">Sign Up</button></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -126,7 +157,8 @@
         <div class="container">
           <h3 class="section-enterprise-title">ENTERPRISE</h3>
           <h2 class="section-titile">
-            Are you interested in a custom-tailored plan?
+            Are you interested in a custom<span class="hide-on-mobile">-</span
+            >tailored plan?
           </h2>
           <p class="enterprise-section-text">
             Product is a set of advanced features for really large teams with
@@ -144,7 +176,28 @@
             Product is being used with great effects alongside:
           </h2>
           <div class="wrap-effects image-list">
-            <img src="./images/amico-product.png" alt="laptop" width="528" />
+            <picture>
+              <source
+                srcset="
+                  ./images/mobile-amico-product.png    1x,
+                  ./images/mobile-amico-product@2x.png 2x
+                "
+                width="350"
+                height="286"
+                media="(max-width: 1150px)"
+              />
+              <img
+                srcset="
+                  ./images/amico-product.png    1x,
+                  ./images/amico-product@2x.png 2x
+                "
+                src="./images/amico-product.png"
+                alt="laptop"
+                width="528"
+                height="392"
+                class="effect-img"
+              />
+            </picture>
             <ul class="effects-list">
               <li class="effects-item">
                 <div class="wrap-icon-title">
@@ -155,7 +208,7 @@
                   </div>
                   <h3 class="effects-item-title">Enterpreneur</h3>
                 </div>
-                <p>
+                <p class="effects-item-text">
                   Product is a great way to help medium and samall enterprise
                   owners achieve their goals
                 </p>
@@ -184,8 +237,10 @@
                   <h3 class="effects-item-title">Universities</h3>
                 </div>
                 <p class="effects-item-text">
-                  Organize university projects and have documents easily<br />
-                  graded online with Product
+                  Organize university projects and have documents easily
+                  <span class="effects-hyphenation"
+                    >graded online with Product</span
+                  >
                 </p>
               </li>
             </ul>
@@ -193,7 +248,7 @@
         </div>
       </section>
       <!-- Question -->
-      <section class="section question-section">
+      <!-- <section class="section question-section">
         <div class="container">
           <h2 class="question-title">Frequently asked question</h2>
           <p class="section-question-text">
@@ -264,7 +319,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- promo -->
       <section class="section promo-section pricing">
         <div class="container">
@@ -286,7 +341,7 @@
         </div>
       </section>
     </main>
-    <footer class="section footer-section pricing">
+    <footer class="section footer-section">
       <div class="container">
         <div class="footer-wrap-container">
           <div class="wrap-logo-sociale">
@@ -321,7 +376,7 @@
             </ul>
           </div>
           <div class="wrap-title-list">
-            <b class="footer-title">Resource</b>
+            <p class="footer-title">Resource</p>
             <ul class="footer-list">
               <li class="footer-card">
                 <a class="footer-link" href="">About Us</a>
@@ -338,7 +393,7 @@
             </ul>
           </div>
           <div class="wrap-title-list footer">
-            <b class="footer-title">Legal Stuff</b>
+            <p class="footer-title">Legal Stuff</p>
             <ul class="footer-list">
               <li class="footer-card">
                 <a class="footer-link" href="">Disclaimer</a>
@@ -355,10 +410,9 @@
             </ul>
           </div>
           <div class="wrap-title-form-button">
-            <b class="footer-title form"
-              >knowing you're always on<br />
-              the best energy deal.
-            </b>
+            <p class="footer-title form">
+              knowing you're always on the best energy deal.
+            </p>
             <form class="order-form" id="orderForm">
               <div class="form-group">
                 <label for="user-tel" class="name-label visually-hidden"

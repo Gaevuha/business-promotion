@@ -282,104 +282,13 @@
 
 /* Page Price */
 
-/* Price */
-.section.section-price {
-  padding-bottom: 75px;
-}
 
-.section-price .container {
-  display: flex;
-  flex-direction: column; 
-}
 
-.section-price-title {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 32px;
-}
 
-.section-price .price-title {
-  font-weight: 700;
-  font-size: 40px;
-  margin-bottom: 16px;
 
-}
-.section-price .price-text {
-  margin-bottom: 49px;
-}
 
-/* Enterprise */
 
-.enterprise-section {
-  padding: 75px 0;
-  background: linear-gradient(180deg, #f6f6f6 0%, rgba(246, 246, 246, 0) 100%);
-}
-.section-enterprise-title {
-  font-weight: 600;
-  font-size: 24px;
-  text-align: center;
-  margin-bottom: 16px;
-}
-.section-titile {
-  font-weight: 700;
-  font-size: 34px;
-  text-align: center;
-  margin-bottom: 8px;
-}
-.enterprise-section-text {
-  font-size: 18px;
-  text-align: center;
-  margin-bottom: 32px;
-}
-.enterprise-btn {
-  display: block;
-  width: 224px;
-  border-radius: 8px;
-  margin: 0 auto;
-}
 
-/* Effects */
-
-.effects-section {
-  padding: 75px 0;
-}
-
-.effects-title {
-  font-weight: 700;
-  font-size: 34px;
-  text-align: center;
-  margin-bottom: 56px;
-}
-.wrap-effects.image-list {
-  display: flex;
-  gap: 60px;
-}
-
-.wrap-effects-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100px;
-  width: 50px;
-  height: 50px;
-  background-color: var(--color-icon-effects-bg);
-}
-
-.wrap-icon-title {
-   display: flex;
-   align-items: center;
-   gap: 14px;
-   margin-bottom: 16px;
-}
-
-.effects-item-title {
-  font-weight: 600;
-  font-size: 24px;
-
-}
-.effects-item-text {
-  line-height: 1.75;
-}
 
 /* Question */
 
