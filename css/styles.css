@@ -1853,7 +1853,12 @@ margin-bottom: 16px;
 }
 
  @media screen and (min-width: 1150px) {
-  .question-title {
+
+.question-section .container {
+  max-width: 920px;
+  padding: 0;
+} 
+.question-title {
   font-size: 34px;
   margin-bottom: 8px;
 }
@@ -1872,7 +1877,7 @@ margin-bottom: 16px;
 
 }
 
-/* Pricing */
+/* Promo */
 
 .promo-section.pricing {
   padding: 75px 0;
