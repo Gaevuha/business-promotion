@@ -1848,6 +1848,7 @@ margin-bottom: 16px;
   margin-bottom: 14px;
 }
 .icon-question {
+  flex-shrink: 0;
   fill: var(--color-brand);
   margin-right: 16px;
 }
