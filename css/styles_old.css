@@ -1,68 +1,6 @@
 
 
 
-
-
-
-
-
-
-
-/* How Product Work */
-
-.product-work {
-  padding-bottom: 58px;
-}
-
-.product-work .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 1027px;
-  padding: 0;
-}
-
-.product-work .section-title {
-  margin-bottom: 73px;
-}
-
-.product-work-list {
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-  margin-bottom: 87px;
-
-}
-.product-work-card {
-  display: flex;
-  align-items: center;
-  gap: 88px;
-}
-
-.product-work-card.reverse {
-  flex-direction: row-reverse;
-}
-
-.step {
-  display: inline-block;
-  font-weight: 500;
-  font-size: 20px;
-  margin-bottom: 16px;
-}
-.card-title {
-  font-size: 24px;
-  margin-bottom: 16px;
-}
-.card-text {
-  line-height: 1.75;
-  margin: 0;
-}
-.product-work-btn {
-  border-radius: 8px;
-  width: 224px;
-}
-
 /* Offers */
 
 .offer-section {
